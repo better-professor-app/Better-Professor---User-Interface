@@ -1,0 +1,46 @@
+//Mixins
+
+.custom-btn(@width: 100%, @height: 15%, @font-size: 20px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @nav-bg;
+    width: @width;
+    border-radius: 10px;
+    font-size: @font-size;
+    color: @nav-font;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @nav-font;
+        color: @nav-bg;
+    }
+}
+
+.medium-devices(@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.tablet (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.desktop (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.large-screen (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
