@@ -157,3 +157,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 0.25rem solid red;
+  width: 100%;
+  background: #619800;
+}
+.logo {
+  display: flex;
+  width: 52%;
+}
+ul.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 52%;
+}
+ul.links a {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+.main-img {
+  width: 100%;
+  margin: 0 auto;
+}
