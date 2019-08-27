@@ -8,6 +8,12 @@ nav{
     background: @nav-bg;
     border-bottom: @border-nav;
     
+    @media @tablet{
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        
+    }
 
     .logo{
         width: 100%;
@@ -28,6 +34,17 @@ nav{
         @media @medium-devices{
             padding: 20px 0;
             font-size: 2rem;
+        }
+
+        @media @tablet{
+            justify-content: center;
+            font-size: 1.3rem; 
+            border-bottom: none;
+            border-radius: 50px; 
+        }
+
+        @media @desktop{
+            font-size: 1.7rem;
         }
 
         &:hover{

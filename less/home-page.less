@@ -17,9 +17,20 @@ html {
             // border: 2px dashed red;
             
             
+            @media @tablet{
+                display: flex;
+                flex-direction: column;
+            }
+
             img{
                 display: none;
+                
+                @media @tablet{
+                    display: flex;
+                    width: 100%;
+                }
             }
+
 
             .landing{
                 display: flex;
@@ -31,6 +42,10 @@ html {
                 h1{
                     font-size: 3rem;
                     padding: 10% 5%;
+
+                    @media @tablet {
+                        padding: 5% 0;
+                    }
                 }
 
                 p{
@@ -48,6 +63,51 @@ html {
                     
                     @media @medium-devices{
                         font-size: 2rem;
+                    }
+                    
+                    @media @tablet{
+                        .custom-btn(30%, 0, 10px);
+                        
+                    }
+                }
+                
+                .form{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    border: 2px dashed red;
+
+
+                    input[type="text"]{
+                        width: 100%;
+                        padding: 2% 0;
+                        margin: 2% 0;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 15px;
+                        color: @contact-font;
+                        font-style: italic;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        color: rgba(35, 41, 59, .4); 
+
+                    }
+
+                    textarea{
+                        padding: 2% 0;
+                        margin: 2% 0;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1rem;
+                        color: @contact-font;
+                        font-style: italic;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        color: rgba(35, 41, 59, .4);
+                    }
+
+                    input[type="submit"]{
+                        padding: 2% 0;
+                        margin: 2% 0;
+                        .custom-btn();
                     }
                 }
                 

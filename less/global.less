@@ -31,6 +31,8 @@
   }
   
   .wrapper {
+
+    border: 2px dashed green;
     min-width: 500px;
     width: 100%;
     margin: 0 auto;  
@@ -38,5 +40,20 @@
     @media @medium-devices{
       min-width: 600px;
       .medium(100%, 0, 0);
+    }
+
+    @media @tablet{
+      min-width: 767px;
+      .tablets(100%,0,0);
+    }
+
+    @media @desktop{
+      min-width: 800px;
+      .desktops(100%, 0, 0);
+    }
+
+    @media @large-screen{
+      min-width: 1000px;
+      .large-screens();
     }
   }

@@ -156,6 +156,7 @@ p {
   line-height: 1.4;
 }
 .wrapper {
+  border: 2px dashed green;
   min-width: 500px;
   width: 100%;
   margin: 0 auto;
@@ -169,12 +170,46 @@ p {
     display: flex;
   }
 }
+@media (min-width: 767px) {
+  .wrapper {
+    min-width: 767px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+}
+@media (min-width: 800px) {
+  .wrapper {
+    min-width: 800px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    min-width: 1000px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  }
+}
 nav {
   width: 100%;
   display: flex;
   flex-direction: column;
   background: #619800;
   border-bottom: #F1F1F1;
+}
+@media (min-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 nav .logo {
   width: 100%;
@@ -196,6 +231,19 @@ nav a {
     font-size: 2rem;
   }
 }
+@media (min-width: 767px) {
+  nav a {
+    justify-content: center;
+    font-size: 1.3rem;
+    border-bottom: none;
+    border-radius: 50px;
+  }
+}
+@media (min-width: 800px) {
+  nav a {
+    font-size: 1.7rem;
+  }
+}
 nav a:hover {
   background-color: #fff;
   color: #619800;
@@ -203,14 +251,31 @@ nav a:hover {
 .footer {
   display: flex;
 }
-.footer a {
+@media (min-width: 767px) {
+  .footer nav {
+    display: flex;
+    padding: 0;
+  }
+}
+.footer nav a {
   display: none;
 }
-.footer p {
+@media (min-width: 767px) {
+  .footer nav a {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer nav p {
   display: flex;
   justify-content: center;
   color: #fff;
   padding: 20px 0;
+}
+@media (min-width: 767px) {
+  .footer nav p {
+    font-size: 1.5rem;
+  }
 }
 html {
   border: 2px dashed green;
@@ -225,8 +290,20 @@ html .header {
   display: flex;
   flex-direction: column-reverse;
 }
+@media (min-width: 767px) {
+  html .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 html .header img {
   display: none;
+}
+@media (min-width: 767px) {
+  html .header img {
+    display: flex;
+    width: 100%;
+  }
 }
 html .header .landing {
   display: flex;
@@ -238,6 +315,11 @@ html .header .landing {
 html .header .landing h1 {
   font-size: 3rem;
   padding: 10% 5%;
+}
+@media (min-width: 767px) {
+  html .header .landing h1 {
+    padding: 5% 0;
+  }
 }
 html .header .landing p {
   padding: 5% 5% 10% 5%;
@@ -267,4 +349,67 @@ html .header .landing .button:hover {
   html .header .landing .button {
     font-size: 2rem;
   }
+}
+@media (min-width: 767px) {
+  html .header .landing .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #619800;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  html .header .landing .button:hover {
+    background-color: #fff;
+    color: #619800;
+  }
+}
+html .header .landing .form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px dashed red;
+}
+html .header .landing .form input[type="text"] {
+  width: 100%;
+  padding: 2% 0;
+  margin: 2% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #81848E;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgba(35, 41, 59, 0.4);
+}
+html .header .landing .form textarea {
+  padding: 2% 0;
+  margin: 2% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #81848E;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgba(35, 41, 59, 0.4);
+}
+html .header .landing .form input[type="submit"] {
+  padding: 2% 0;
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #619800;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+html .header .landing .form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #619800;
 }
