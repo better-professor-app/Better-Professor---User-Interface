@@ -15,10 +15,18 @@ nav{
         
     }
 
-    .logo{
+    .logo a{
         width: 100%;
-        height: 50%;
+        background-color: @nav-font;
+        border-radius: 0;
+        
+        @media @tablet{
+            background-color: @nav-font;
+        }
 
+        @media @desktop{
+            background-color: @nav-font;
+        }
     }
 
     a{
@@ -45,6 +53,7 @@ nav{
 
         @media @desktop{
             font-size: 1.7rem;
+            
         }
 
         &:hover{
