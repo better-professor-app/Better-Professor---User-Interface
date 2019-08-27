@@ -398,20 +398,61 @@ html .header .landing .form .memo {
     width: 40%;
   }
 }
-html .header .landing .form input[type="text"] {
+html .header .landing .form textarea[type="firstname"] {
   width: 100%;
   padding: 2% 0;
   margin: 2% 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  color: #81848E;
+  font-size: 2rem;
   font-style: italic;
   font-weight: bold;
   border-radius: 5px;
-  color: rgba(35, 41, 59, 0.4);
+  color: black;
 }
 @media (min-width: 767px) {
-  html .header .landing .form input[type="text"] {
+  html .header .landing .form textarea[type="firstname"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 2% 0;
+  }
+}
+html .header .landing .form textarea[type="lastname"] {
+  width: 100%;
+  padding: 2% 0;
+  margin: 2% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 5px;
+  color: black;
+}
+@media (min-width: 767px) {
+  html .header .landing .form textarea[type="lastname"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 2% 0;
+  }
+}
+html .header .landing .form textarea[type="email"] {
+  width: 100%;
+  padding: 2% 0;
+  margin: 2% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 5px;
+  color: black;
+}
+@media (min-width: 767px) {
+  html .header .landing .form textarea[type="email"] {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -422,15 +463,14 @@ html .header .landing .form input[type="text"] {
 }
 html .header .landing .form textarea {
   font-display: start;
-  padding: 2% 0;
+  padding: 0% 0;
   margin: 2% 0;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #81848E;
+  color: black;
   font-style: italic;
   font-weight: bold;
   border-radius: 5px;
-  color: rgba(35, 41, 59, 0.4);
 }
 @media (min-width: 767px) {
   html .header .landing .form textarea {
