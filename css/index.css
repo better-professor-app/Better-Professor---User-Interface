@@ -159,29 +159,119 @@ p {
 }
 nav.navigation {
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  border: 0.25rem solid red;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding: 1.5rem;
   width: 100%;
   background: #619800;
 }
-.logo {
+nav h1 {
   display: flex;
-  width: 52%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 40%;
+  color: aliceblue;
+}
+@media (max-width: 800px) {
+  nav h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+figure.drop-down {
+  display: none;
+}
+@media (max-width: 800px) {
+  figure.drop-down {
+    display: inline;
+  }
+  figure.drop-down:hover ul.links {
+    display: block;
+  }
 }
 ul.links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 52%;
+  width: 60%;
+}
+@media (max-width: 800px) {
+  ul.links {
+    display: none;
+  }
 }
 ul.links a {
   white-space: nowrap;
   font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
-  color: antiquewhite;
+  color: #000000;
+}
+button.nav-btn {
+  border: 1rem solid #6c93d1;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  background: #6c93d1;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1.5rem solid #ffffff;
+  width: 100%;
+  background: #619800;
+  height: 10vh;
 }
 .main-img {
   width: 100%;
   margin: 0 auto;
+}
+figure.landing-img {
+  padding-bottom: 2rem;
+}
+img.main-img {
+  opacity: 100%;
+  filter: blur(3px);
+}
+div.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+@media (max-width: 800px) {
+  div.centered {
+    top: 30%;
+    left: 50%;
+  }
+}
+button.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  border: 1rem solid #6c93d1;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background: #6c93d1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  width: 30rem;
+  cursor: pointer;
 }
