@@ -56,17 +56,25 @@ html {
                 }
 
                 .button{
-                    .custom-btn(60%, 10%, 20px);
+                    .custom-btn(80%, 0, 30px);
                     justify-content: center;
-                    padding-top:10px;
+                    padding: 3%;
+                    text-decoration: none;
                     
                     @media @medium-devices{
-                        font-size: 2rem;
+                        font-size: 2.5rem;
+                        margin-bottom: 10%;
                     }
                     
                     @media @tablet{
-                        .custom-btn(30%, 0, 10px);
-                        
+                        .tablets(60%, 0, 2%);
+                        font-size: 3rem;
+                        margin-bottom: 10%;
+                    }
+
+                    @media @desktop{
+                        .desktops(60%, 0, 2%);
+                        margin-bottom: 10%;
                     }
                 }
                 
@@ -74,7 +82,6 @@ html {
                     width: 100%;
                     display: flex;
                     justify-content: center;
-                    border: 2px dashed red;
                     align-items: center;
 
                     @media @tablet{
@@ -112,6 +119,7 @@ html {
                     }
 
                     textarea{
+                        font-display: start;
                         padding: 2% 0;
                         margin: 2% 0;
                         font-family: 'Roboto', sans-serif;
@@ -120,6 +128,7 @@ html {
                         font-style: italic;
                         font-weight: bold;
                         border-radius: 5px;
+                        
                         color: rgba(35, 41, 59, .4);
 
                         @media@tablet{
@@ -213,6 +222,94 @@ html {
                         .tablets(100%, 0, 10px);
                     }
                 }
+            }
+        }
+
+        .midContent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+
+            @media @medium-devices{
+                margin-bottom: 10%;
+            }
+
+            @media @tablet{
+                margin-bottom: 15%;
+            }
+
+            .team{
+                padding-bottom: 10%;
+                border: 2px solid @border-nav;
+                border-radius: 15px; 
+                justify-content: center; 
+                margin: 20px; 
+                
+                @media @medium-devices{
+                    .medium(40%, 0, 0);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                    font-size: 1rem;
+                    margin: 10px;
+                }
+
+                @media @tablet{
+                    .medium(30%, 0, 0);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                    font-size: 1rem;
+                    margin: 10px; 
+                }
+
+                @media @desktop{
+                    .desktops(20%, 0, 0);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                    font-size: 1rem;
+                    margin: 10px;
+                }
+
+               .boxTop{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    background-color: @nav-bg;
+                    border-radius: 10px;
+
+                    @media @medium-devices{
+                        width: 100%;
+                    }
+
+                    h2{
+                        color: @nav-font;
+
+                        @media @medium-devices{
+                            font-size: 2rem;
+                            padding: 5% 0; 
+                        }
+
+                        @media @desktop{
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    img{
+                        width: 100%;
+                        border-radius: 20px;  
+                    }
+               } 
+
+               .boxBottom{
+                    padding-bottom: 5%;
+
+                    p{
+                        padding: 2% 2%;
+                        font-size: 2rem;
+                    }
+               }
             }
         }
 

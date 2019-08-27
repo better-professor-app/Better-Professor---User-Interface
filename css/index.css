@@ -340,13 +340,14 @@ html .header .landing .button {
   display: flex;
   align-items: center;
   background-color: #619800;
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
   cursor: pointer;
   justify-content: center;
-  padding-top: 10px;
+  padding: 3%;
+  text-decoration: none;
 }
 html .header .landing .button:hover {
   background-color: #fff;
@@ -354,31 +355,33 @@ html .header .landing .button:hover {
 }
 @media (min-width: 600px) {
   html .header .landing .button {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 10%;
   }
 }
 @media (min-width: 767px) {
   html .header .landing .button {
+    width: 60%;
+    margin: 0;
+    padding: 2%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #619800;
-    width: 30%;
-    border-radius: 10px;
-    font-size: 10px;
-    color: #fff;
-    cursor: pointer;
+    font-size: 3rem;
+    margin-bottom: 10%;
   }
-  html .header .landing .button:hover {
-    background-color: #fff;
-    color: #619800;
+}
+@media (min-width: 800px) {
+  html .header .landing .button {
+    width: 60%;
+    margin: 0;
+    padding: 2%;
+    display: flex;
+    margin-bottom: 10%;
   }
 }
 html .header .landing .form {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 2px dashed red;
   align-items: center;
 }
 @media (min-width: 767px) {
@@ -419,6 +422,7 @@ html .header .landing .form input[type="text"] {
   }
 }
 html .header .landing .form textarea {
+  font-display: start;
   padding: 2% 0;
   margin: 2% 0;
   font-family: 'Roboto', sans-serif;
@@ -556,4 +560,99 @@ html .middle .box p {
     padding: 10px;
     display: flex;
   }
+}
+html .midContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  html .midContent {
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 767px) {
+  html .midContent {
+    margin-bottom: 15%;
+  }
+}
+html .midContent .team {
+  padding-bottom: 10%;
+  border: 2px solid #F1F1F1;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 20px;
+}
+@media (min-width: 600px) {
+  html .midContent .team {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+@media (min-width: 767px) {
+  html .midContent .team {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+@media (min-width: 800px) {
+  html .midContent .team {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+html .midContent .team .boxTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #619800;
+  border-radius: 10px;
+}
+@media (min-width: 600px) {
+  html .midContent .team .boxTop {
+    width: 100%;
+  }
+}
+html .midContent .team .boxTop h2 {
+  color: #fff;
+}
+@media (min-width: 600px) {
+  html .midContent .team .boxTop h2 {
+    font-size: 2rem;
+    padding: 5% 0;
+  }
+}
+@media (min-width: 800px) {
+  html .midContent .team .boxTop h2 {
+    font-size: 1.8rem;
+  }
+}
+html .midContent .team .boxTop img {
+  width: 100%;
+  border-radius: 20px;
+}
+html .midContent .team .boxBottom {
+  padding-bottom: 5%;
+}
+html .midContent .team .boxBottom p {
+  padding: 2% 2%;
+  font-size: 2rem;
 }
