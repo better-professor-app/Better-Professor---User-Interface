@@ -372,6 +372,22 @@ html .header .landing .form {
   display: flex;
   justify-content: center;
   border: 2px dashed red;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  html .header .landing .form {
+    padding: 20px 10px;
+  }
+}
+html .header .landing .form .memo {
+  display: none;
+}
+@media (min-width: 767px) {
+  html .header .landing .form .memo {
+    display: flex;
+    padding: 10px;
+    width: 40%;
+  }
 }
 html .header .landing .form input[type="text"] {
   width: 100%;
@@ -385,6 +401,16 @@ html .header .landing .form input[type="text"] {
   border-radius: 5px;
   color: rgba(35, 41, 59, 0.4);
 }
+@media (min-width: 767px) {
+  html .header .landing .form input[type="text"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 2% 0;
+  }
+}
 html .header .landing .form textarea {
   padding: 2% 0;
   margin: 2% 0;
@@ -395,6 +421,16 @@ html .header .landing .form textarea {
   font-weight: bold;
   border-radius: 5px;
   color: rgba(35, 41, 59, 0.4);
+}
+@media (min-width: 767px) {
+  html .header .landing .form textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 2% 0;
+  }
 }
 html .header .landing .form input[type="submit"] {
   padding: 2% 0;
@@ -412,4 +448,14 @@ html .header .landing .form input[type="submit"] {
 html .header .landing .form input[type="submit"]:hover {
   background-color: #fff;
   color: #619800;
+}
+@media (min-width: 767px) {
+  html .header .landing .form input[type="submit"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 2% 0;
+  }
 }

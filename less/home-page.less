@@ -76,7 +76,21 @@ html {
                     display: flex;
                     justify-content: center;
                     border: 2px dashed red;
+                    align-items: center;
 
+                    @media @tablet{
+                        padding: 20px 10px;
+                    }
+
+                    .memo{
+                        display: none;
+
+                        @media @tablet{
+                            display: flex;
+                            padding: 10px;
+                            width: 40%;
+                        }
+                    }
 
                     input[type="text"]{
                         width: 100%;
@@ -90,6 +104,12 @@ html {
                         border-radius: 5px;
                         color: rgba(35, 41, 59, .4); 
 
+                        @media@tablet{
+                            .tablets(100%, 0, 0);
+                            font-size: 1.5rem;
+                            padding: 2% 0;
+                        }
+
                     }
 
                     textarea{
@@ -102,12 +122,24 @@ html {
                         font-weight: bold;
                         border-radius: 5px;
                         color: rgba(35, 41, 59, .4);
+
+                        @media@tablet{
+                            .tablets(100%, 0, 0);
+                            font-size: 1.5rem;
+                            padding: 2% 0;
+                        }
                     }
 
                     input[type="submit"]{
                         padding: 2% 0;
                         margin: 2% 0;
                         .custom-btn();
+
+                        @media@tablet{
+                            .tablets(100%, 0, 0);
+                            font-size: 1.5rem;
+                            padding: 2% 0;
+                        }
                     }
                 }
                 
