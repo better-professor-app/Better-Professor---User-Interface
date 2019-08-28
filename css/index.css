@@ -283,6 +283,7 @@ nav.navigation ul.links button.nav-btn {
 }
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 3.5rem;
   font-size: 1rem;
@@ -292,6 +293,23 @@ footer {
   background: #619800;
   height: 10vh;
   color: #fff;
+}
+nav.external-links {
+  display: flex;
+  justify-content: space-between;
+}
+nav.external-links ul {
+  display: flex;
+}
+nav.external-links ul li {
+  display: flex;
+  justify-content: space-between;
+}
+nav.external-links ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 .main-img {
   width: 100%;
@@ -365,6 +383,14 @@ div.call-to-action button.btn a {
   border: 1rem solid #fafafa;
   margin-bottom: 1.6rem;
   padding: 0 0.4rem;
+}
+@media (max-width: 520px) {
+  .team-container .team-column {
+    width: 20rem;
+    border: 1rem solid #ffffff;
+    margin-bottom: 1.6rem;
+    padding: 0 0.4rem;
+  }
 }
 .team-container .card {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
