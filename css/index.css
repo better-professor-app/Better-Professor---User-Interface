@@ -181,12 +181,9 @@ nav h1 {
     margin: 0 auto;
   }
 }
-figure.drop-down {
-  display: none;
-}
 @media (max-width: 800px) {
   figure.drop-down {
-    display: inline;
+    display: block;
   }
   figure.drop-down:hover ul.links {
     display: block;
@@ -198,9 +195,16 @@ ul.links {
   align-items: center;
   width: 60%;
 }
+ul.links figure.drop-down {
+  display: none;
+}
 @media (max-width: 800px) {
-  ul.links {
-    display: none;
+  ul.links figure.drop-down {
+    display: flex;
+    flex-direction: row;
+  }
+  ul.links figure.drop-down:hover ul.links {
+    display: block;
   }
 }
 ul.links a {
@@ -209,6 +213,11 @@ ul.links a {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+@media (max-width: 800px) {
+  ul.links a {
+    display: none;
+  }
 }
 button.nav-btn {
   border: 1rem solid #6c93d1;
@@ -219,6 +228,11 @@ button.nav-btn {
   white-space: nowrap;
   background: #6c93d1;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  button.nav-btn {
+    display: none;
+  }
 }
 footer {
   display: flex;
@@ -256,6 +270,7 @@ div.centered {
   div.centered {
     top: 30%;
     left: 50%;
+    font-size: 1.5rem;
   }
 }
 button.btn {
@@ -274,4 +289,41 @@ button.btn {
   white-space: nowrap;
   width: 30rem;
   cursor: pointer;
+}
+.team-container {
+  padding: 0 2rem;
+}
+.team-container .team-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 1.6rem;
+  padding: 0 0.8rem;
+}
+@media screen and (max-width: 650px) {
+  .team-container .team-column .team-column {
+    width: 100%;
+    display: block;
+  }
+}
+.team-container .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.team-container .team-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.team-container .team-container::after,
+.team-container .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.team-container .title {
+  color: grey;
+  font-size: 2rem;
+}
+.team-container .description {
+  font-size: 1rem;
 }

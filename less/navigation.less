@@ -42,12 +42,12 @@ nav.navigation {
   // }
   figure.drop-down {
     // border: 0.5rem solid red;
-    display: none;
+    // display: none;
     // padding-bottom: 2rem;
     // height: 540px;
     // opacity: 40%;
     @media @tablet {
-        display: inline;
+        display: block;
         &:hover ul.links{
             display: block;
         }
@@ -60,10 +60,22 @@ nav.navigation {
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    @media @tablet{
+
+    figure.drop-down {
       display: none;
-      // width: 20%;
+      @media @tablet {
+        display: flex;
+        flex-direction: row;
+        // justify-content: right;
+        // align-content: flex-end;
+        // border: 2rem solid red;
+        // width: 100%;
+        &:hover ul.links{
+            display: block;
+        }
     }
+    }
+    
   }
   
   ul.links a{
@@ -76,6 +88,11 @@ nav.navigation {
     font-weight: bold;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    @media @tablet{
+      display: none;
+      // width: 20%;
+    }
+    
 }
 
 
@@ -89,6 +106,10 @@ button.nav-btn {
   white-space: nowrap;
   background: #6c93d1;
   cursor: pointer;
+  @media @tablet{
+    display: none;
+    // width: 20%;
+  }
 }
 
 
