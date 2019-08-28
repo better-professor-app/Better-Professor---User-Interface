@@ -7,14 +7,19 @@
     font-size: 62.5%;
   }
   
-  html, body {
-    font-family: 'Roboto', sans-serif;
-    color: black;
+  html,
+  body {
+    font-family: "Ubuntu", sans-serif;
+    // color: @main-font-color;
   }
   
-  h1, h2, h3, h4, h5 {
-    font-family: 'Roboto', sans-serif;
-    color: black;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Russo One", sans-serif;
+    // color: @header-font-color;
   }
   
   h2 {
@@ -26,34 +31,17 @@
   }
   
   p {
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
     line-height: 1.4;
   }
   
-  .wrapper {
-
-    
-    min-width: 500px;
+  .container {
+    max-width: 1080px;
     width: 100%;
-    margin: 0 auto;  
-
-    @media @medium-devices{
-      min-width: 600px;
-      .medium(100%, 0, 0);
-    }
-
-    @media @tablet{
-      min-width: 767px;
-      .tablets(100%,0,0);
-    }
-
-    @media @desktop{
-      min-width: 800px;
-      .desktops(100%, 0, 0);
-    }
-
-    @media @large-screen{
-      min-width: 1000px;
-      .large-screens();
-    }
+    margin: 0 auto;
+    // @media @phone {
+    //   max-width: 500px;
+    //   width: 100%;
+    // }
   }
+  

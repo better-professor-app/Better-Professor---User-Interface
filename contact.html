@@ -1,55 +1,49 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Better Professor</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <!-- <figure><img src="./img/logo.png" alt="logo" class="logo" /></figure> -->
+      <h1><a href="./index.html">Better-Professor</a> </h1>
+      <ul class="links">
+        <li><a href="./how-it-works.html">HOW IT WORKS!</a></li>
+        <li><a href="./team.html">TEAM</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+        <button class="nav-btn">
 
-  <title>Better Professor</title>
+          <li><a href="#">LOGIN</a></li>
+        </button>
+        <button class="nav-btn">
 
-  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+          <li><a href="#">SIGN-UP</a></li>
+        </button>
+      </ul>
+    </nav>
+    <div class="contact-container">
+        <h3>Contact Us</h3>
+        <form action="/action_page.php">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your full name here..">
+          
+           <label for="fname">Email</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your email here..">
+      
+          
+         
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      
+    </div>
+    <footer>Better-Professor. Copyright 2019.</footer>
 
-</head>
-
-<body class="wrapper">
-        <nav class="nav">
-            <a href="index.html" class="logo">
-                <img src="/img/better-professor-logo.png" alt="Better Professor Logo of a graduation hat" >
-            </a>
-          <a href="howitworks.html">How It Works!</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="#">Login</a>
-          <a href="#">Sign Up</a>
-        </nav>
-        <header class="header">
-          <img src="/img/contactusHeader.jpg" alt="One wireless phone and three rotary phones on concrete" class="contactHeader">
-          <div class="landing">
-            <h1>Contact header above</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed eos provident exercitationem.</p>
-            <div class="form">
-                <img src="/img/formPic.jpg" alt="A pen next to a note pad and part of a plant" class="memo">
-                <form action=" " class="textAreas">
-                    <textarea name="firstname" rows="1" cols="80" maxlength="200" placeholder="First Name"></textarea><br>
-                    <textarea name="lastname" rows="1" cols="80" maxlength="200" placeholder="Last Name"></textarea><br>
-                    <textarea name="email" rows="1" cols="80" maxlength="200" placeholder="Email: example@example.com"></textarea><br>
-                    <textarea name="message" rows="10" cols="80" maxlength="500" placeholder="Let us know what you think..."></textarea><br>
-                    <input type="submit" value="Submit!">
-                </form>
-            </div>
-          </div>
-        </header>
-        <footer class="footer">
-          <nav class="nav">
-              <p>Better Professor. Copyright 2019</p>
-              <a href="howitworks.html">How It Works!</a>
-              <a href="team.html">Team</a>
-              <a href="contact.html">Contact Us</a>
-              <a href="#">Login</a>
-              <a href="#">Sign Up</a>
-          </nav>
-        </footer>     
-</body>
+  </body>
 </html>
