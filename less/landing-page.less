@@ -32,22 +32,46 @@ div.centered {
 
 }
 
-button.btn {
+div.call-to-action{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  border: 1rem solid #6c93d1;
-  border-radius: 0.5rem;
-  color: #ffffff;
-  background: #6c93d1;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 auto;
-  white-space: nowrap;
+  justify-content: space-around;
 
-  // padding: 0.5em;
-  width: 30rem;
-  cursor: pointer;
+  // align-content: flex-start;
+  flex-wrap: wrap;
+  // padding-bottom: 2rem;
+  .divide-call-to-action{
+    border: 0.5rem solid rgba(255, 0, 0, 0);
+    // width: 33.33%;
+    @media @tablet {
+      width: 100rem;
+
+    }
+  }
+
+  button.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    border: 1rem solid #6c93d1;
+    border-radius: 2rem;
+    background: #6c93d1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    
+    // padding: 0.5em;
+    // padding-bottom: 2rem;
+    width: 30rem;
+    //  width: 33.33%;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+  
+  }
 }
