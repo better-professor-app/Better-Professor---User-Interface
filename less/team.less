@@ -8,7 +8,7 @@
         margin-bottom: 1.6rem;
         padding: 0 0.8rem;
         
-        @media screen and (max-width: 650px) {
+        @media @tablet {
             .team-column {
               width: 100%;
               display: block;
@@ -20,7 +20,7 @@
       
       
       .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
       }
       
       
@@ -36,10 +36,18 @@
         clear: both;
         display: table;
       }
+      h2{
+          @media @tablet {
+            font-size: 2rem;
+          }
+      }
       
       .title {
         color: grey;
         font-size: 2rem;
+        @media @tablet {
+            font-size:1rem;
+        }
       }
       .description{
         font-size: 1rem;

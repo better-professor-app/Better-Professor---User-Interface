@@ -299,14 +299,14 @@ button.btn {
   margin-bottom: 1.6rem;
   padding: 0 0.8rem;
 }
-@media screen and (max-width: 650px) {
+@media (max-width: 800px) {
   .team-container .team-column .team-column {
     width: 100%;
     display: block;
   }
 }
 .team-container .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 }
 .team-container .team-heading {
   font-size: 3rem;
@@ -320,9 +320,19 @@ button.btn {
   clear: both;
   display: table;
 }
+@media (max-width: 800px) {
+  .team-container h2 {
+    font-size: 2rem;
+  }
+}
 .team-container .title {
   color: grey;
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .team-container .title {
+    font-size: 1rem;
+  }
 }
 .team-container .description {
   font-size: 1rem;
