@@ -285,14 +285,27 @@ div.centered {
     font-size: 1.5rem;
   }
 }
-button.btn {
+div.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.call-to-action .divide-call-to-action {
+  border: 0.5rem solid rgba(255, 0, 0, 0);
+}
+@media (max-width: 800px) {
+  div.call-to-action .divide-call-to-action {
+    width: 100rem;
+  }
+}
+div.call-to-action button.btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-content: space-between;
   border: 1rem solid #6c93d1;
-  border-radius: 0.5rem;
-  color: #ffffff;
+  border-radius: 2rem;
   background: #6c93d1;
   font-size: 1.8rem;
   font-weight: bold;
@@ -301,6 +314,10 @@ button.btn {
   white-space: nowrap;
   width: 30rem;
   cursor: pointer;
+}
+div.call-to-action button.btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .team-container {
   padding: 0 2rem;
