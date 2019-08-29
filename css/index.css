@@ -377,7 +377,7 @@ div.call-to-action button.btn a {
   color: #ffffff;
 }
 .container {
-  height: 100vh;
+  height: 100%;
 }
 @media (max-width: 800px) {
   .container {
