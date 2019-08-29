@@ -288,11 +288,14 @@ footer {
   padding: 3.5rem;
   font-size: 1rem;
   font-weight: bold;
-  border: 1.5rem solid #ffffff;
+  border-top: 1.5rem solid #ffffff;
   width: 100%;
   background: #619800;
   height: 10vh;
   color: #fff;
+  clear: both;
+  position: relative;
+  margin-bottom: -2000px;
 }
 nav.external-links {
   display: flex;
@@ -373,24 +376,34 @@ div.call-to-action button.btn a {
   text-decoration: none;
   color: #ffffff;
 }
+.container div h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 0.2rem dashed #619800;
+  border-width: 50%;
+}
 .middle {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  margin: 10% 0;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .middle {
-    width: 100%;
     margin: 0%;
     padding: 0%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .middle {
     display: flex;
-    flex-direction: column;
   }
 }
 .middle .box {
@@ -400,6 +413,18 @@ div.call-to-action button.btn a {
   align-items: center;
   margin: 2%;
   width: 20%;
+  border: 1.5rem solid rgba(0, 0, 0, 0);
+}
+@media (max-width: 800px) {
+  .middle .box {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+  }
 }
 .middle .box i {
   width: 100%;
@@ -434,6 +459,7 @@ div.call-to-action button.btn a {
   width: 100%;
   font-size: 2rem;
   max-height: 100%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .middle .box h2 {
@@ -443,6 +469,7 @@ div.call-to-action button.btn a {
 }
 .middle .box p {
   padding: 3% 0;
+  font-size: 1.1rem;
   width: 80%;
 }
 @media (max-width: 500px) {
@@ -455,6 +482,16 @@ div.call-to-action button.btn a {
 .middle .arrowRight {
   display: flex;
   align-items: center;
+}
+.middle .arrowRight figure.arrow-right img.arrow-right {
+  max-width: 6rem;
+}
+@media (max-width: 800px) {
+  .middle .arrowRight figure.arrow-right img.arrow-right {
+    display: none;
+    margin: 0 auto;
+    max-width: 6rem;
+  }
 }
 .middle .arrowRight i {
   width: 100%;
@@ -479,6 +516,26 @@ div.call-to-action button.btn a {
 @media (max-width: 500px) {
   .middle .arrowRight i {
     display: none;
+  }
+}
+.middle .arrowDown {
+  display: none;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .middle .arrowDown {
+    display: flex;
+  }
+}
+.middle .arrowDown figure.arrow-down img.arrow-down {
+  max-width: 6rem;
+  max-height: 6rem;
+}
+@media (max-width: 800px) {
+  .middle .arrowDown figure.arrow-down img.arrow-down {
+    margin: 0 auto;
+    max-width: 6rem;
+    max-height: 6rem;
   }
 }
 .middle .arrowDown i {
