@@ -12,3 +12,5 @@
 2. Open your terminal and navigate to your preprocessing project by using the `cd` command
 
 3. Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+
+4. [![Netlify Status](https://api.netlify.com/api/v1/badges/9c8848ac-8dc6-4e58-918c-1391ce101100/deploy-status)](https://app.netlify.com/sites/better-professor-ui/deploys)
