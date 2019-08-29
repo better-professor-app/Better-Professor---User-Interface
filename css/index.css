@@ -373,6 +373,133 @@ div.call-to-action button.btn a {
   text-decoration: none;
   color: #ffffff;
 }
+.middle {
+  display: flex;
+  width: 100%;
+  margin: 10% 0;
+}
+@media (max-width: 800px) {
+  .middle {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.middle .box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 2%;
+  width: 20%;
+}
+.middle .box i {
+  width: 100%;
+  height: 8vh;
+  font-size: 5rem;
+  color: #fff;
+  background: #619800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+@media (max-width: 800px) {
+  .middle .box i {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    height: 4vh;
+  }
+}
+@media (max-width: 500px) {
+  .middle .box i {
+    font-size: 3rem;
+    height: 6vh;
+  }
+}
+.middle .box h2 {
+  padding: 3% 0;
+  width: 100%;
+  font-size: 2rem;
+  max-height: 100%;
+}
+@media (max-width: 500px) {
+  .middle .box h2 {
+    font-size: 3rem;
+    padding-left: 3%;
+  }
+}
+.middle .box p {
+  padding: 3% 0;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .middle .box {
+    width: 90%;
+    margin: 5% 2%;
+    font-size: 1.8rem;
+  }
+}
+.middle .arrowRight {
+  display: flex;
+  align-items: center;
+}
+.middle .arrowRight i {
+  width: 100%;
+  height: 6rem;
+  font-size: 5rem;
+  color: #619800;
+  display: flex;
+  align-content: center;
+  border-radius: 50px;
+}
+@media (max-width: 800px) {
+  .middle .arrowRight i {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle .arrowRight i {
+    display: none;
+  }
+}
+.middle .arrowDown i {
+  width: 100%;
+  height: 6rem;
+  font-size: 5rem;
+  color: #619800;
+  display: none;
+  border-radius: 50px;
+}
+@media (max-width: 800px) {
+  .middle .arrowDown i {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .middle .arrowDown i {
+    display: flex;
+    justify-content: center;
+  }
+}
 .team-container {
   padding: 0 2rem;
 }
