@@ -579,7 +579,7 @@ div.call-to-action button.btn a {
   margin-bottom: 1.6rem;
   padding: 0 0.4rem;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .team-container .team-column {
     display: flex;
     justify-content: center;
